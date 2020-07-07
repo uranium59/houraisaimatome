@@ -5,7 +5,7 @@ const data = [
     "circleName": "DADA",
     "boothNumber": "D-13",
     "homepage": "https://twitter.com/YoungZun6?s=09",
-    "description": "클래시컬한 악기 위주로 에픽뮤직 스타일의 동방 어레인지를 만드는 DADA입니다.<br>동인계는 첫 참가이기에 잘 부탁드립니다!",
+    "description": "클래시컬한 악기 위주로 에픽뮤직 스타일의 동방 어레인지를 만드는 DADA입니다. 동인계는 첫 참가이기에 잘 부탁드립니다!",
     "circleImage": "/img/circle/DADA.jpg",
     "album": [
       {
@@ -35,7 +35,7 @@ const data = [
     "circleName": "MAD MIND MACHINE",
     "boothNumber": "D-15",
     "homepage": "http://madmindmachine.com/",
-    "description": "올해로 활동 8년째를 맞이하는 동방어레인지 개인 서클입니다.<br>이번에는 개인 활동 10주년 기념 코메이지 자매 컴필레이션 앨범 「X」 발매 예정입니다.<br>당일 부스에서 미리듣기를 제공하오니 많이 들러주세요. 잘 부탁드립니다!",
+    "description": "올해로 활동 8년째를 맞이하는 동방어레인지 개인 서클입니다. 이번에는 개인 활동 10주년 기념 코메이지 자매 컴필레이션 앨범 「X」 발매 예정입니다. 당일 부스에서 미리듣기를 제공하오니 많이 들러주세요. 잘 부탁드립니다!",
     "circleImage": "/img/circle/madmindmachine.png",
     "album": [
       {
@@ -55,7 +55,7 @@ const data = [
     "circleName": "NZX Studio",
     "boothNumber": "D-16",
     "homepage": "https://twitter.com/liltclix",
-    "description": "하고싶은 음악을 하는 서클입니다.<br>그러다보니 특별히 장르는 정해져 있지 않습니다만 주로 실내악과 트랩을 다루는 편입니다.",
+    "description": "하고싶은 음악을 하는 서클입니다. 그러다보니 특별히 장르는 정해져 있지 않습니다만 주로 실내악과 트랩을 다루는 편입니다.",
     "circleImage": "/img/circle/nzxstudio.jpg",
     "album": [
       {
