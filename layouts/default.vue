@@ -79,6 +79,9 @@ export default {
 </script>
 
 <style lang="scss">
+.v-card__subtitle {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
 .root-page {
   width: 100vw;
   height: 100vh;

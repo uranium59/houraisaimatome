@@ -1,11 +1,61 @@
 /* eslint-disable */
 const data = [
   {
+    "circleId": "dada",
+    "circleName": "DADA",
+    "boothNumber": "D-13",
+    "homepage": "https://twitter.com/YoungZun6?s=09",
+    "description": "클래시컬한 악기 위주로 에픽뮤직 스타일의 동방 어레인지를 만드는 DADA입니다.<br>동인계는 첫 참가이기에 잘 부탁드립니다!",
+    "circleImage": "/img/circle/DADA.jpg",
+    "album": [
+      {
+        "albumName": "DADA",
+        "albumImage": "/img/circle/DADA/cover.jpg",
+        "crossFade": {
+          "type": "notyet",
+          "url": "",
+        },
+        "description": "클래시컬 악기로 구성된 에픽뮤직 스타일의 동방 어레인지 앨범입니다",
+        "detailInfo": `1. 붉은 안개의 호수
+        원곡 - 붉음보다도 붉은 꿈
+        
+        2. 재앙신의 유혹
+        원곡 - 신성하고 장엄한 옛 전장 ~ Suwa Foughten Field
+        
+        3. 재앙신의 유혹 현악 사중주 ver.
+        원곡 - 신성하고 장엄한 옛 전장 ~ Suwa Foughten Field
+        
+        4. 그랜드 스칼렛
+        원곡 - U.N.오웬은 그녀인가, 마법소녀들의 백년제`,
+      },
+    ]
+  },
+  {
+    "circleId": "madmindmachine",
+    "circleName": "MAD MIND MACHINE",
+    "boothNumber": "D-15",
+    "homepage": "http://madmindmachine.com/",
+    "description": "올해로 활동 8년째를 맞이하는 동방어레인지 개인 서클입니다.<br>이번에는 개인 활동 10주년 기념 코메이지 자매 컴필레이션 앨범 「X」 발매 예정입니다.<br>당일 부스에서 미리듣기를 제공하오니 많이 들러주세요. 잘 부탁드립니다!",
+    "circleImage": "/img/circle/madmindmachine.png",
+    "album": [
+      {
+        "albumName": "「X」",
+        "albumImage": "/img/circle/madmindmachine/cover.png",
+        "crossFade": {
+          "type": "notyet",
+          "url": "",
+        },
+        "description": "",
+        "detailInfo": ``,
+      },
+    ]
+  },
+  {
     "circleId": "nzxstudio",
     "circleName": "NZX Studio",
     "boothNumber": "D-16",
     "homepage": "https://twitter.com/liltclix",
-    "description": "",
+    "description": "하고싶은 음악을 하는 서클입니다.<br>그러다보니 특별히 장르는 정해져 있지 않습니다만 주로 실내악과 트랩을 다루는 편입니다.",
     "circleImage": "/img/circle/nzxstudio.jpg",
     "album": [
       {
@@ -15,8 +65,28 @@ const data = [
           "type": "youtube",
           "url": "https://www.youtube.com/embed/7dVE9wZ76qQ",
         },
-        "description": "",
-        "detailInfo": ``,
+        "description": "예대제에 냈었던 신령묘곡 위주의 4번째 앨범입니다.<br>좋아하는 서클인 FELT 곡을 레퍼런스로 삼는 등 이런저런 다양한 시도를 많이했습니다.<br>개인적으로 아쉬움이 많이 남기는 하지만 그래도 일본에 처음 냈던 앨범이라 이래저래 특별한 느낌이네요.",
+        "detailInfo": `1.Night Blossom (13-02)
+        原曲:死霊の夜桜 / Nzx
+        
+        2.幽霊の神殿 (13-03)
+        原曲:ゴーストリード / Nzx
+        
+        3.尸解仙伝説 (13-11)
+        原曲:大神神話伝 / Nzx
+        
+        4.Find the Truth (07-12)
+        原曲:アルティメットトゥルース / Nzx
+        
+        5.Scarlet Step (06-15)
+        原曲:U.N.オーエンは彼女なのか?  / ミン
+        
+        6.音中の欲望 (13-13)
+        原曲:聖徳伝説 ~ True Administrator /Nzx
+        
+        7.A craving for kindness (13-08)
+        原曲:デザイアドライブ /Nzx
+        `,
       },
     ]
   },
@@ -25,12 +95,12 @@ const data = [
     "circleName": "키리사메 가내수공업",
     "boothNumber": "D-17",
     "homepage": "https://twitter.com/3nLab",
-    "description": "",
+    "description": "서클 3nLab에서 봉래제의 '키리사메 가내수공업™ by 3nLab' 부스를 통해 보컬 어레인지가 포함된 첫 동방 앨범을 선보입니다.",
     "circleImage": "/img/circle/3nlab.png",
     "album": [
       {
         "albumName": "VIRTUAL SYSTEM",
-        "albumImage": "/img/circle/3nlab/cover.png",
+        "albumImage": "/img/circle/3nlab/cover.jpg",
         "crossFade": {
           "type": "youtube",
           "url": "https://www.youtube.com/embed/-r3sfhQBEcI",

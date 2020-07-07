@@ -10,19 +10,19 @@
       </v-avatar>
       <div>
         <v-card-title
-          class="headline"
+          class="headline mb-1"
           v-text="getCircleName"
         />
         <v-card-subtitle
-          class="circle-number pb-3"
+          class="circle-number pb-2"
           v-text="'부스넘버 : ' + getCircleNumber"
         />
         <v-card-text
-          class="circle-text py-2"
+          class="circle-text pt-1 pb-2"
           v-text="getCircleDescription"
         />
         <v-card-text
-          class="circle-text py-2"
+          class="circle-text py-1"
           v-text="getCircleAlbumList"
         />
       </div>
@@ -67,7 +67,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .circle-list-item {
   background-color: rgba(22, 22, 22, 0.5) !important;
   min-width: 300px;
@@ -76,5 +76,8 @@ export default {
 .circle-number {
   font-size: 1rem;
   color: white !important;
+}
+.headline {
+  text-shadow: 1px 1px 3px darkgreen;
 }
 </style>

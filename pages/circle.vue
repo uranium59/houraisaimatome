@@ -2,7 +2,7 @@
   <div class="circle-wrapper">
     <div class="to-main-wrapper">
       <nuxt-link to="/" class="to-main mb-2">
-        <v-icon class="left-arrow" color="#888888">
+        <v-icon class="left-arrow" color="#eeeeee">
           mdi-arrow-left
         </v-icon>
         <span>
@@ -28,14 +28,16 @@
   height: 36px;
   width: 150px;
   border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .to-main {
   height: 30px;
   text-decoration: none;
-  color: #777777;
+  color: #eeeeee;
   font-size: 24px;
+  text-shadow: 1px 1px 2px black;
   span {
+    color: #eeeeee;
     line-height: 1.6;
   }
 }

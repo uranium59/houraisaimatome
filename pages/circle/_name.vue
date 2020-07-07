@@ -62,6 +62,9 @@
             크로스페이드
             <SoundCloud v-if="item.crossFade.type === 'soundcloud'" :soundcloud-info="item.crossFade" />
             <Youtube v-if="item.crossFade.type === 'youtube'" :youtube-info="item.crossFade" />
+            <div v-if="item.crossFade.type === 'notyet'">
+              추가 예정
+            </div>
           </div>
           <v-divider />
           <div class="album-original-info">

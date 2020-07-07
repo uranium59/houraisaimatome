@@ -1,5 +1,8 @@
 <template>
   <div class="circle-list-wrapper">
+    <div class="top-text">
+      정렬은 서클넘버를 기준으로 합니다.
+    </div>
     <CircleListItem v-for="(item, i) in circleList" :key="i" :circle-info="item" />
   </div>
 </template>
@@ -32,3 +35,11 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.top-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+</style>

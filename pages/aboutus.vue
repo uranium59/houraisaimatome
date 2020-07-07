@@ -27,6 +27,11 @@
           {{ soundcloud }}
         </a>
       </v-card-text>
+      <v-card-text>
+        이 홈페이지는 추후 봉래제 전체 서클의 마토메 사이트로 변환될 예정입니다<br>
+        사이트 오류와 관련된 사항은 <a href="https://github.com/uranium59/houraisaimatome" target="_blank">https://github.com/uranium59/houraisaimatome</a> 에 이슈로 등록해주세요<br>
+        기타 문의사항은 gdzergling@core-a.org 로 메일 부탁드립니다.
+      </v-card-text>
     </v-card>
   </div>
 </template>
