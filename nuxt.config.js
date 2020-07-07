@@ -7,9 +7,6 @@ module.exports = {
   /*
   ** Headers of the page
   */
-  axios: {
-    baseURL: '/'
-  },
 
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
@@ -57,6 +54,7 @@ module.exports = {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: '/'
   },
   /*
   ** vuetify module configuration
