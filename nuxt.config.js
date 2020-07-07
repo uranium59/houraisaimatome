@@ -7,6 +7,10 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  axios: {
+    baseURL: '/'
+  },
+
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
     title: '봉래제 어레인지 마토메',
