@@ -35,18 +35,56 @@ const data = [
     "circleName": "MAD MIND MACHINE",
     "boothNumber": "D-15",
     "homepage": "http://madmindmachine.com/",
-    "description": "올해로 활동 8년째를 맞이하는 동방어레인지 개인 서클입니다. 이번에는 개인 활동 10주년 기념 코메이지 자매 컴필레이션 앨범 「X」 발매 예정입니다. 당일 부스에서 미리듣기를 제공하오니 많이 들러주세요. 잘 부탁드립니다!",
+    "description": "2012년에 활동을 시작해 동방어레인지 위주로 활동하고 있는 개인 서클. 다양한 장르을 아우르는 무료 웹 앨범 프로젝트 TOHO VARIOUS ARTISTS와 개인 단위 앨범을 릴리즈 하고 있다.",
     "circleImage": "/img/circle/madmindmachine.png",
     "album": [
       {
-        "albumName": "「X」",
-        "albumImage": "/img/circle/madmindmachine/cover.png",
+        "albumName": " X ",
+        "albumImage": "/img/circle/madmindmachine/cover.jpg",
         "crossFade": {
-          "type": "notyet",
-          "url": "",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/0d09DP1wenU",
         },
-        "description": "",
-        "detailInfo": ``,
+        "description": "SANY-ON명의 개인 활동 10주년 기념 코메이지 자매 온리 어레인지 앨범.<br>10년 동안 같이 했던 분들 중 몇분을 게스트로 모셨습니다.",
+        "detailInfo": `01 Intro
+        SANY-ON / 地霊達の起床
+
+        02 ミラクル★レボリューション！マジカル♥サトリ、返信します！
+        mayolazr / 少女さとり ~ 3rd eye
+
+        03 D.D.D (deep dark dream)
+        on_OTL (Voc. Corncheeseday) / ハートフェルトファンシー, 少女さとり ~ 3rd eye
+
+        04 Last Control
+        KARUT / ラストリモート
+
+        05 Rorschach
+        SANY-ON / ハルトマンの妖怪少女
+
+        06 그 때, 그 여름의 열대야
+        Aiel eltlinde / ハートフェルトファンシー
+
+        07 Count Dat
+        SANY-ON / ハートフェルトファンシー
+
+        08 Unconciousness
+        Li-ion / ラストリモート
+
+        09 Mesmerize
+        SANY-ON / 少女さとり ~ 3rd eye
+
+        10 Charades
+        Yozumina / ハルトマンの妖怪少女
+
+        11 KOIKOIKO
+        DENPA-SAMPLER / ラストリモート
+
+        12 あなたに届け！〜テリブルスーヴニール〜
+        mayolazr / 少女さとり ~ 3rd eye
+
+        13 Outro
+        SANY-ON / 地霊達の帰宅
+        `,
       },
     ]
   },
