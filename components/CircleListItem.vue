@@ -15,15 +15,11 @@
         />
         <v-card-subtitle
           class="circle-number pb-2"
-          v-text="'부스넘버 : ' + getCircleNumber"
+          v-text="getCircleNumber"
         />
         <v-card-text
           class="circle-text pt-1 pb-2"
           v-text="getCircleDescription"
-        />
-        <v-card-text
-          class="circle-text py-1"
-          v-text="getCircleAlbumList"
         />
       </div>
     </div>
@@ -74,7 +70,7 @@ export default {
   width: 100%;
 }
 .circle-number {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white !important;
 }
 .headline {
