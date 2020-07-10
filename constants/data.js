@@ -90,7 +90,7 @@ const data = [
   },
   {
     "circleId": "nzxstudio",
-    "circleName": "NZX Studio",
+    "circleName": "Nzx Studio",
     "boothNumber": "D-16",
     "homepage": "https://twitter.com/liltclix",
     "description": "하고싶은 음악을 하는 서클입니다. 그러다보니 특별히 장르는 정해져 있지 않습니다만 주로 실내악과 트랩을 다루는 편입니다.",
