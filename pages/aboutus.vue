@@ -2,7 +2,7 @@
   <div>
     <v-card class="aboutus-card">
       <v-card-title>
-        봉래제 어레인지 마토메
+        봉래제 마토메
       </v-card-title>
       <v-card-text>
         정보 제공에 도움을 주신<br>
@@ -10,7 +10,7 @@
         그리고 이 페이지를 방문해주신 여러분들께 감사드립니다.
       </v-card-text>
       <v-card-text>
-        Made by uranium59<br>
+        Made by uranium59 from Team Nuclear Generator<br>
         <v-icon>
           mdi-twitter
         </v-icon>

@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     gotoCircleInfo () {
-      this.$router.push('/arrangelist/circle/' + this.circleInfo.id)
+      this.$router.push('/airhouraisai/circle/' + this.circleInfo.id)
     }
   }
 }

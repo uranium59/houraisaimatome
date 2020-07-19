@@ -79,9 +79,9 @@
   </div>
 </template>
 <script>
-import SoundCloud from '../../components/soundcloudwrapper'
-import Youtube from '../../components/youtubewrapper'
-import breakpoints from '../../mixins/breakpoint'
+import SoundCloud from '../../../components/soundcloudwrapper'
+import Youtube from '../../../components/youtubewrapper'
+import breakpoints from '../../../mixins/breakpoint'
 
 export default {
   components: {

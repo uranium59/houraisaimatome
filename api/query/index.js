@@ -1,5 +1,8 @@
 import express from 'express'
-import listHandler from './list'
+
+import airlistHandler from './airlist'
+import aircircleHandler from './aircircle'
+import arrangelistHandler from './arrangelist'
 import circleHandler from './circle'
 
 const router = express.Router()
@@ -13,7 +16,9 @@ router.use((req, res, next) => {
   next()
 })
 
-router.post('/list', listHandler)
+router.post('/airlist', airlistHandler)
+router.post('/aircircle', aircircleHandler)
+router.post('/arrangelist', arrangelistHandler)
 router.post('/circle', circleHandler)
 
 export default {

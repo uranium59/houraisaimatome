@@ -8,11 +8,13 @@
       fixed
       app
     >
-      <v-list>
+      <v-list class="pt-12">
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
+          :href="item.href"
           :to="item.to"
+          :target="item.target"
           router
           exact
         >
@@ -54,20 +56,31 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
+          icon: 'mdi-home',
+          title: 'Home',
+          to: '/',
+        },
+        {
+          icon: 'mdi-page-next-outline',
+          title: '에어봉래제',
+          to: '/airhouraisai',
+        },
+        {
+          icon: 'mdi-open-in-new',
+          title: '봉래제 공식 홈페이지',
+          href: 'http://houraisai.com',
+          target: '_blank',
         },
         {
           icon: 'mdi-chart-bubble',
           title: 'About Us',
-          to: '/aboutus'
+          to: '/aboutus',
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: '봉래제 어레인지 마토메'
+      title: '봉래제 마토메 사이트'
     }
   },
   computed: {

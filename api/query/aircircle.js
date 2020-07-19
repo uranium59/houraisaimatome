@@ -1,4 +1,4 @@
-import circleList from '../../constants/arrangedata'
+import circleList from '../../constants/airdata'
 
 export default function (req, res, next) {
   console.log(circleList)

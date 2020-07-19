@@ -1,7 +1,7 @@
 <template>
   <div class="circle-wrapper">
     <div class="to-main-wrapper">
-      <nuxt-link to="/" class="to-main mb-2">
+      <nuxt-link to="/arrangelist" class="to-main mb-2">
         <v-icon class="left-arrow" color="#eeeeee">
           mdi-arrow-left
         </v-icon>

@@ -1,45 +1,65 @@
 <template>
-  <div class="circle-list-wrapper">
-    <div class="top-text">
-      정렬은 서클넘버를 기준으로 합니다.
-    </div>
-    <CircleListItem v-for="(item, i) in circleList" :key="i" :circle-info="item" />
+  <div class="matome-index-root">
+    <v-card
+      class="index-card my-5"
+      to="/airhouraisai"
+    >
+      <v-card-title>
+        <v-icon class="menu-icon pr-3 pt-0">
+          mdi-arrow-right
+        </v-icon>
+        에어 봉래제 참가 리스트
+      </v-card-title>
+    </v-card>
+    <v-card
+      class="index-card my-5"
+      href="https://google.com"
+      target="_blank"
+    >
+      <v-card-title>
+        <v-icon class="menu-icon pr-3 pt-0">
+          mdi-arrow-right
+        </v-icon>
+        에어 봉래제 주문 구글폼 바로가기
+      </v-card-title>
+    </v-card>
+    <v-card 
+      class="index-card my-5"
+      to="/arrangelist"
+    >
+      <v-card-title>
+        <v-icon class="menu-icon pr-3 pt-0">
+          mdi-arrow-right
+        </v-icon>
+        봉래제 어레인지 서클 리스트
+      </v-card-title>
+    </v-card>
+    <v-card
+      class="index-card my-5"
+      disabled
+    >
+      <v-card-title>
+        <v-icon class="menu-icon pr-3 pt-0">
+          mdi-arrow-right
+        </v-icon>
+        봉래제 마토메
+      </v-card-title>
+      <v-card-subtitle>
+        준비중
+      </v-card-subtitle>
+    </v-card>
   </div>
 </template>
-
 <script>
-import CircleListItem from '../components/CircleListItem'
-
 export default {
-  components: {
-    CircleListItem,
-  },
-  data () {
-    return {
-      circleList: []
-    }
-  },
-  beforeMount () {
-    console.log('name: ', this.$route.params.name)
-    console.log('circle: ', this.circle)
-    this.$axios.$post('/query/list', {
-      name: this.$route.params.name
-    }).then((info) => {
-      if(!info) {
-        this.$router.push('/')
-      }
-      this.circleList = info
-      this.isLoaded = true
-      console.log(this.circle)
-    })
-  },
+  
 }
 </script>
+<style lang="scss">
+
+</style>
 <style lang="scss" scoped>
-.top-text {
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  text-shadow: 1px 1px 3px black;
+.menu-icon {
+  line-height: 32px;
 }
 </style>
