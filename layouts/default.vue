@@ -41,13 +41,19 @@
         <nuxt />
       </v-container>
     </v-content>
+    <CartDialog />
   </v-app>
 </template>
 
 <script>
+import CartDialog from '../components/CartDialog'
 import breakpoints from '../mixins/breakpoint'
+import { mapGetters } from 'vuex'
 
 export default {
+  components: {
+    CartDialog,
+  },
   mixins: [breakpoints],
   data () {
     return {
@@ -64,6 +70,11 @@ export default {
           icon: 'mdi-page-next-outline',
           title: '에어봉래제',
           to: '/airhouraisai',
+        },
+        {
+          icon: 'mdi-page-next-outline',
+          title: '어레인지 서클 리스트',
+          to: '/arrangelist',
         },
         {
           icon: 'mdi-open-in-new',
@@ -84,10 +95,18 @@ export default {
     }
   },
   computed: {
+    ...mapGetters(['getOrderExist']),
     getBackgroundImageUrl () {
       return this.isDesktop ? '/img/bg/pc.png' : '/img/bg/mobile.png'
-    }
-  }
+    },
+    isCartExist () {
+      console.log('function called')
+      return this.getOrderExist
+    },
+  },
+  mounted () {
+    console.log('orderexist:', this.getOrderExist)
+  },
 }
 </script>
 

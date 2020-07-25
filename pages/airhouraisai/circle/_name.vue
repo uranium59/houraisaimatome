@@ -48,7 +48,7 @@
               :size="isDesktop ? 150 : 110"
               tile
             >
-              <v-img v-for="(imgsrc, imgi) in item.productImage" :key="imgi" :src="imgsrc" />
+              <v-img v-if="item.productImage.length > 0" :src="item.productImage[0]" />
             </v-avatar>
             <div>
               <v-card-title
@@ -62,7 +62,19 @@
           </div>
           <v-divider />
           <div class="album-original-info">
-            <v-expansion-panels v-if="item.detailInfo" flat class="background-inherit">
+            <v-expansion-panels v-if="item.detailInfo" accordion multiple flat class="background-inherit">
+              <v-expansion-panel class="background-inherit">
+                <v-expansion-panel-header class="py-0 px-1">
+                  <v-card-subtitle class="album-original-title px-3 py-2">
+                    상품 이미지
+                  </v-card-subtitle>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content class="py-0 px-0">
+                  <v-card-text class="album-original-data px-3 py-2">
+                    <v-img v-for="(img, m) in item.productImage" :key="m" :src="img" />
+                  </v-card-text>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
               <v-expansion-panel class="background-inherit">
                 <v-expansion-panel-header class="py-0 px-1">
                   <v-card-subtitle class="album-original-title px-3 py-2">
@@ -100,18 +112,36 @@
           </template>
           <template v-slot:item.quantity="{ item }">
             <div class="quantity-input-wrapper">
-              <v-text-field v-model="item.quantity" dense single-line class="quantity-input" type="number" />
+              <v-text-field
+                v-model="item.quantity"
+                dense
+                single-line
+                class="quantity-input"
+                type="number"
+                @change="() => {if(Number(item.quantity) > 99){ item.quantity = 99 } if(Number(item.quantity) < 0){ item.quantity = 0 }}"
+                @keyup="() => {if(Number(item.quantity) > 99){ item.quantity = 99 } if(Number(item.quantity) < 0){ item.quantity = 0 }}"
+              />
             </div>
           </template>
         </v-data-table>
-        <v-btn class="mt-3">
+        <v-btn class="mt-3" @click="saveOrder()">
           저장하기
+        </v-btn>
+        <v-btn class="mt-3" @click="clearOrder()">
+          모두 지우기
         </v-btn>
         <v-card-subtitle>
           주의! 입력한 찜 목록은 사이트를 벗어나면 초기화 됩니다!
         </v-card-subtitle>
       </div>
     </v-card>
+    <v-dialog>
+      <v-card>
+        <v-card-title>
+          에러!
+        </v-card-title>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 <script>
@@ -180,11 +210,38 @@ export default {
           quantity: 0,
         }
       })
+      const oldOrders = this.$store.getters.getCircleOrder(this.circle.boothNumber) || []
+      oldOrders.forEach(e => {
+        const product = this.products.find(p => {
+          return p.id === e.id
+        })
+        product.quantity = JSON.parse(JSON.stringify(e.quantity))
+      })
+      
       this.isLoaded = true
       console.log(this.circle)
     })
   },
   methods: {
+    saveOrder () {
+      const filtered = this.products.filter(e => {
+        return e.quantity > 0
+      })
+      console.log(filtered)
+      this.$store.commit('changeOrder', {
+        circlenumber: this.circle.boothNumber, 
+        orderinfo: JSON.parse(JSON.stringify(filtered))
+      })
+    },
+    clearOrder () {
+      this.products.forEach(e => {
+        e.quantity = 0
+      })
+      this.$store.commit('changeOrder', {
+        circlenumber: this.circle.boothNumber, 
+        orderinfo: [],
+      })
+    },
     replaceNextline (text) {
       if(!text) {
         return ''
@@ -194,6 +251,11 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.circle-root .v-data-table__mobile-row {
+  min-height: 32px !important;
+}
+</style>
 <style lang="scss" scoped>
 .circle-root {
   margin-top: 8px;
