@@ -13,7 +13,11 @@ const data = [
         "productName": "They Are",
         "price": 10000,
         "productImage": [
-          "/img/circle/teamng/3rd.jpg"
+          "/img/circle/teamng/3rd.jpg",
+          "/img/circle/teamng/ex1.jpg",
+          "/img/circle/teamng/ex2.jpg",
+          "/img/circle/teamng/ex3.jpg",
+          "/img/circle/teamng/ex4.jpg",
         ],
         "externalUrl": "https://soundcloud.com/uranium59/3rd-they-are-crossfade",
         "description": "이번에 새로 만든 앨범입니다<br>시디는 동그랗고, 케이스는 네모나며 아무튼 메탈입니다. 그리고 전곡 구작입니다.<br>원없이 메탈로 달렸으니 아마도 다음앨범은 메탈이 아닌 무언가를 만들거 같습니다.",

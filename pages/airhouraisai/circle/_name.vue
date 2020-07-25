@@ -71,7 +71,7 @@
                 </v-expansion-panel-header>
                 <v-expansion-panel-content class="py-0 px-0">
                   <v-card-text class="album-original-data px-3 py-2">
-                    <v-img v-for="(img, m) in item.productImage" :key="m" :src="img" />
+                    <v-img v-for="(img, m) in removeCover(item.productImage)" :key="m" class="my-1" :src="img" />
                   </v-card-text>
                 </v-expansion-panel-content>
               </v-expansion-panel>
@@ -247,7 +247,13 @@ export default {
         return ''
       }
       return text.replace(/\n/gi, '<br>')
-    }
+    },
+    removeCover (list) {
+      if(list.length < 2) {
+        return []
+      }
+      return list.slice(1)
+    },
   }
 }
 </script>
