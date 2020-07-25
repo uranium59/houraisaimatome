@@ -42,13 +42,13 @@
           <v-divider />
           <div class="d-flex flex-no-wrap">
             <v-avatar
-              v-if="item.productImage"
+              v-if="item.coverImage"
               class="ma-3"
               :class="!isDesktop ? 'mx-1' : ''"
               :size="isDesktop ? 150 : 110"
               tile
             >
-              <v-img v-if="item.productImage.length > 0" :src="item.productImage[0]" />
+              <v-img :src="item.coverImage" />
             </v-avatar>
             <div>
               <v-card-title
@@ -56,7 +56,7 @@
                 :class="!isDesktop ? 'px-1' : ''"
                 v-text="item.productName"
               />
-              <v-card-subtitle :class="!isDesktop ? 'px-1' : ''" v-text="item.price + ' 원'" />
+              <v-card-subtitle :class="!isDesktop ? 'px-1 pb-2' : 'pb-2'" v-text="item.price + ' 원'" />
               <v-card-subtitle :class="!isDesktop ? 'px-1' : ''" v-html="item.description" />
             </div>
           </div>
@@ -65,38 +65,41 @@
             <v-expansion-panels v-if="item.detailInfo" accordion multiple flat class="background-inherit">
               <v-expansion-panel class="background-inherit">
                 <v-expansion-panel-header class="py-0 px-1">
-                  <v-card-subtitle class="album-original-title px-3 py-2">
-                    상품 이미지
-                  </v-card-subtitle>
-                </v-expansion-panel-header>
-                <v-expansion-panel-content class="py-0 px-0">
-                  <v-card-text class="album-original-data px-3 py-2">
-                    <v-img v-for="(img, m) in removeCover(item.productImage)" :key="m" class="my-1" :src="img" />
-                  </v-card-text>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-              <v-expansion-panel class="background-inherit">
-                <v-expansion-panel-header class="py-0 px-1">
-                  <v-card-subtitle class="album-original-title px-3 py-2">
+                  <v-card-subtitle class="product-accodian-header px-3 py-2">
                     추가정보
                   </v-card-subtitle>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content class="py-0 px-0">
-                  <v-card-text class="album-original-data px-3 py-2">
-                    <a v-if="item.externalUrl" class="hompage-link" :href="item.externalUrl" target="_blank">
-                      {{ item.externalUrl }}
-                    </a>
-                  </v-card-text>
-                  <v-card-text class="album-original-data px-3 py-2" v-html="replaceNextline(item.detailInfo)" />
+                  <div v-for="(desc, d) in item.detailInfo" :key="d">
+                    <v-card-text class="product-detail-head px-3 py-2">
+                      {{ desc.head }}
+                    </v-card-text>
+                    <v-card-text class="product-detail-body px-3 py-2" v-html="replaceNextline(desc.body)" />
+                  </div>
                 </v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
           </div>
         </div>
+        <v-expansion-panels v-if="getCircle.productImages && getCircle.productImages.length > 0" accordion multiple flat class="background-inherit">
+          <v-expansion-panel class="background-inherit">
+            <v-expansion-panel-header class="py-0 px-1">
+              <v-card-subtitle class="album-origin al-title px-3 py-2">
+                상품 이미지
+              </v-card-subtitle>
+            </v-expansion-panel-header>
+            <v-expansion-panel-content class="py-0 px-0">
+              <v-card-text class="product-detail-body px-3 py-2">
+                <v-img v-for="(img, m) in getCircle.productImages" :key="m" class="my-1" :src="img" />
+              </v-card-text>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+        <v-divider />
       </div>
       <div class="product-info" :class="!isDesktop ? 'ml-3 mr-0' : 'ml-5 mr-2'">
         <v-card-title
-          class="headline mt-5"
+          class="headline mt-3"
         >
           찜 목록
         </v-card-title>
@@ -274,8 +277,15 @@ export default {
 .circle-card {
   background-color: rgba(22, 22, 22, 0.5) !important;
 }
-.album-original-title {
+.product-accodian-header {
+  font-size: 18px;
+}
+.product-detail-head {
   font-size: 16px;
+  font-weight: bold;
+}
+.product-detail-body {
+  font-size: 13px;
 }
 .album-original-data {
   font-size: 13px;
