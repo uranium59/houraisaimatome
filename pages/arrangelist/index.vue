@@ -11,6 +11,7 @@
 import CircleListItem from '../../components/CircleListItem'
 
 export default {
+  layout: 'defaultold',
   components: {
     CircleListItem,
   },

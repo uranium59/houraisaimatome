@@ -1,9 +1,13 @@
 export const state = () => ({
   cart: {},
   isCartExist: false,
+  firstInfoShow: false,
 })
 
 export const mutations = {
+  infoShowed (state) {
+    state.firstInfoShow = true
+  },
   changeOrder (state, { circlenumber, orderinfo }) {
     state.cart[circlenumber] = orderinfo
     if(!orderinfo || orderinfo.length < 1) {

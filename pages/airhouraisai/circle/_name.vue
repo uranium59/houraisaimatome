@@ -70,6 +70,9 @@
                   </v-card-subtitle>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content class="py-0 px-0">
+                  <div v-if="item.externalUrl">
+                    외부 링크 : <a target="_blank" :href="item.externalUrl">{{ item.externalUrl }}</a>
+                  </div>
                   <div v-for="(desc, d) in item.detailInfo" :key="d">
                     <v-card-text class="product-detail-head px-3 py-2">
                       {{ desc.head }}
@@ -84,7 +87,7 @@
         <v-expansion-panels v-if="getCircle.productImages && getCircle.productImages.length > 0" accordion multiple flat class="background-inherit">
           <v-expansion-panel class="background-inherit">
             <v-expansion-panel-header class="py-0 px-1">
-              <v-card-subtitle class="album-origin al-title px-3 py-2">
+              <v-card-subtitle class="image-expand al-title px-3 py-2">
                 상품 이미지
               </v-card-subtitle>
             </v-expansion-panel-header>
@@ -264,6 +267,14 @@ export default {
 .circle-root .v-data-table__mobile-row {
   min-height: 32px !important;
 }
+.circle-root a {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    outline-width: 1px;
+  }
+}
 </style>
 <style lang="scss" scoped>
 .circle-root {
@@ -289,6 +300,9 @@ export default {
 }
 .album-original-data {
   font-size: 13px;
+}
+.image-expand {
+  font-size: 18px;
 }
 .background-inherit {
   background-color: inherit !important;

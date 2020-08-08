@@ -1,6 +1,8 @@
 <template>
   <v-app dark class="root-page">
     <v-img class="background" position="top right" :src="getBackgroundImageUrl" />
+    <v-img v-if="isDesktop" class="kaguya-sama desktop" contain position="bottom left 20%" src="/img/bg/kaguya.png" />
+    <v-img v-if="!isDesktop" class="kaguya-sama not-desktop" contain position="bottom left" src="/img/bg/kaguya.png" />
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -47,6 +49,7 @@
 
 <script>
 import CartDialog from '../components/CartDialog'
+import sideMenuList from '../constants/sidemenu'
 import breakpoints from '../mixins/breakpoint'
 import { mapGetters } from 'vuex'
 
@@ -60,34 +63,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-home',
-          title: 'Home',
-          to: '/',
-        },
-        {
-          icon: 'mdi-page-next-outline',
-          title: '에어봉래제',
-          to: '/airhouraisai',
-        },
-        {
-          icon: 'mdi-page-next-outline',
-          title: '어레인지 서클 리스트',
-          to: '/arrangelist',
-        },
-        {
-          icon: 'mdi-open-in-new',
-          title: '봉래제 공식 홈페이지',
-          href: 'http://houraisai.com',
-          target: '_blank',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'About Us',
-          to: '/aboutus',
-        }
-      ],
+      items: sideMenuList,
       miniVariant: false,
       right: true,
       rightDrawer: false,
@@ -97,7 +73,7 @@ export default {
   computed: {
     ...mapGetters(['getOrderExist']),
     getBackgroundImageUrl () {
-      return this.isDesktop ? '/img/bg/pc.png' : '/img/bg/mobile.png'
+      return '/img/bg/background.jpg'
     },
     isCartExist () {
       console.log('function called')
@@ -128,6 +104,22 @@ export default {
   z-index: -100;
   width: 100vw;
   height: 100vh;
+}
+.kaguya-sama {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -99;
+  width: 100vw;
+  height: 90vh;
+  &.not-desktop {
+    overflow: hidden;
+    left: -5%;
+    height: 90vh;
+    width: 100%;
+    min-width: 600px;
+  }
 }
 .theme--dark.v-application {
   background: rgba(0, 0, 0, 0) !important;

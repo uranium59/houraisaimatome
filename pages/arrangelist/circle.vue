@@ -13,6 +13,11 @@
     <nuxt-child />
   </div>
 </template>
+<script>
+export default {
+  layout: 'defaultold',
+}
+</script>
 <style lang="scss" scoped>
 .left-arrow {
   margin-top: -7px;

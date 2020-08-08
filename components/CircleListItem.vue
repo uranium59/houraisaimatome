@@ -1,5 +1,5 @@
 <template>
-  <v-card class="circle-list-item my-2" hover @click="gotoCircleInfo">
+  <v-card class="card-background circle-list-item my-2" hover @click="gotoCircleInfo">
     <div class="d-flex flex-no-wrap">
       <v-avatar
         class="ma-3"
@@ -62,7 +62,6 @@ export default {
 
 <style lang="scss" scoped>
 .circle-list-item {
-  background-color: rgba(22, 22, 22, 0.5) !important;
   min-width: 300px;
   width: 100%;
 }

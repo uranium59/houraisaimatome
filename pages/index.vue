@@ -1,7 +1,10 @@
 <template>
   <div class="matome-index-root">
+    <v-img src="/img/bg/type.png" contain max-height="180px" />
     <v-card
-      class="index-card my-5"
+      class="card-background index-card my-5"
+      hover
+      elevation="4"
       to="/airhouraisai"
     >
       <v-card-title>
@@ -16,7 +19,9 @@
       </v-card-text>
     </v-card>
     <v-card
-      class="index-card my-5"
+      class="card-background index-card my-5"
+      hover
+      elevation="4"
       href="https://google.com"
       target="_blank"
     >
@@ -28,7 +33,8 @@
       </v-card-title>
     </v-card>
     <v-card 
-      class="index-card my-5"
+      class="card-background index-card my-5"
+      elevation="4"
       to="/arrangelist"
     >
       <v-card-title>
@@ -39,7 +45,8 @@
       </v-card-title>
     </v-card>
     <v-card
-      class="index-card my-5"
+      class="card-background index-card my-5"
+      elevation="4"
       disabled
     >
       <v-card-title>
@@ -63,6 +70,9 @@ export default {
 
 </style>
 <style lang="scss" scoped>
+.index-card {
+  border: 1px grey;
+}
 .menu-icon {
   line-height: 32px;
 }

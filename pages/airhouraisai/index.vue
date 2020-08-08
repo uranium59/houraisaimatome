@@ -1,5 +1,12 @@
 <template>
   <div class="circle-list-wrapper">
+    <v-img src="/img/bg/type.png" contain max-height="180px" />
+    <v-card class="card-background pa-1 mt-2 mb-4">
+      <v-card-subtitle class="pa-1 top-announce">
+        <b>봉래제 ~air~ 는 봉래제에 부스들의 작품들을 정리한 통신판매 서비스입니다.</b><br><br>
+        구매자 여러분들의 배송비 절감을 위해 통판 종료 직후 참가서클의 작품을 수량대로 봉래제 주최진이 먼저 모은후 구매자 분들에게 배송드리는 방법으로 진행하고 있사오니 작품을 받아보시는데 다소의 시간이 걸리는 점 양해 부탁드립니다.
+      </v-card-subtitle>
+    </v-card>
     <div class="top-text">
       정렬은 서클넘버를 기준으로 합니다.
     </div>
@@ -12,13 +19,13 @@
     <CircleListItem v-for="(item, i) in circleList" :key="i" :circle-info="item" />
     <v-dialog
       v-model="showDialog"
-      :width="!isDesktop ? 300 : 900"
+      :width="!isDesktop ? 330 : 900"
     >
       <v-card class="howto-card">
         <v-card-title>
           에어 봉래제 통판 페이지 사용방법
         </v-card-title>
-        <v-card-subtitle>
+        <v-card-subtitle class="mt-2">
           1. 주문할 상품들을 둘러보기
         </v-card-subtitle>
         <v-card-text>
@@ -56,6 +63,12 @@
           모든 항목을 작성 완료하셨다면 끝!<br>
           구글폼에 나와있는 계좌에 입금을 하시고 상품의 배송을 편하게 기다려 주시면 됩니다!
         </v-card-text>
+        <v-card-text>
+          ※ 이 페이지는 서클리스트 상단의 "에어봉래제 통판 신청방법 자세히 보기" 를 눌러 다시 볼 수 있습니다<br>
+          <v-btn @click="showHowTo()">
+            닫기
+          </v-btn>
+        </v-card-text>
       </v-card>
     </v-dialog>
   </div>
@@ -73,7 +86,7 @@ export default {
   data () {
     return {
       circleList: [],
-      showDialog: false,
+      showDialog: true,
     }
   },
   beforeMount () {
@@ -87,6 +100,10 @@ export default {
       this.isLoaded = true
       console.log(this.circle)
     })
+    if(this.$store.state.firstInfoShow) {
+      this.showDialog = false
+    }
+    this.$store.commit('infoShowed')
   },
   methods: {
     showHowTo () {
@@ -96,6 +113,13 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.top-announce {
+  font-size: 14px;
+  color: white;
+  b {
+  font-size: 15px;
+  }
+}
 .top-text {
   font-size: 18px;
   font-weight: bold;
