@@ -309,7 +309,7 @@ export default {
 .background-inherit {
   background-color: inherit !important;
   .click-guidance {
-    background-color: rgba(38, 171, 207, 0.274);
+    background-color: rgba(38, 171, 207, 0.274) !important;
   }
 }
 .cart-table {
