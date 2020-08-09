@@ -22,7 +22,7 @@ export default [
   },
   {
     icon: 'mdi-chart-bubble',
-    title: 'About Us',
-    to: '/aboutus',
+    title: 'About Site',
+    to: '/aboutsite',
   }
 ]

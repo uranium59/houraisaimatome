@@ -40,7 +40,7 @@
         </v-card-title>
         <div v-for="(item, i) in getInfoProducts" :key="i">
           <v-divider />
-          <div class="d-flex flex-no-wrap">
+          <div class="d-flex flex-no-wrap mb-1">
             <v-avatar
               v-if="item.coverImage"
               class="ma-3"
@@ -62,8 +62,8 @@
           </div>
           <v-divider />
           <div class="album-original-info">
-            <v-expansion-panels v-if="item.detailInfo" accordion multiple flat class="background-inherit">
-              <v-expansion-panel class="background-inherit">
+            <v-expansion-panels v-if="item.detailInfo" accordion multiple class="background-inherit">
+              <v-expansion-panel class="click-guidance elevation-5">
                 <v-expansion-panel-header class="py-0 px-1">
                   <v-card-subtitle class="product-accodian-header px-3 py-2">
                     추가정보
@@ -84,8 +84,8 @@
             </v-expansion-panels>
           </div>
         </div>
-        <v-expansion-panels v-if="getCircle.productImages && getCircle.productImages.length > 0" accordion multiple flat class="background-inherit">
-          <v-expansion-panel class="background-inherit">
+        <v-expansion-panels v-if="getCircle.productImages && getCircle.productImages.length > 0" accordion multiple class="background-inherit mt-4">
+          <v-expansion-panel class="click-guidance elevation-5">
             <v-expansion-panel-header class="py-0 px-1">
               <v-card-subtitle class="image-expand al-title px-3 py-2">
                 상품 이미지
@@ -106,6 +106,7 @@
         >
           찜 목록
         </v-card-title>
+        <v-divider />
         <v-data-table
           class="cart-table"
           hide-default-footer
@@ -113,10 +114,10 @@
           :items="products"
           item-key="id"
         >
-          <template v-slot:item.price="{ item }">
+          <template v-slot:[`item.price`]="{ item }">
             {{ item.price + '원' }}
           </template>
-          <template v-slot:item.quantity="{ item }">
+          <template v-slot:[`item.quantity`]="{ item }">
             <div class="quantity-input-wrapper">
               <v-text-field
                 v-model="item.quantity"
@@ -130,6 +131,7 @@
             </div>
           </template>
         </v-data-table>
+        <v-divider />
         <v-btn class="mt-3" @click="saveOrder()">
           저장하기
         </v-btn>
@@ -306,6 +308,9 @@ export default {
 }
 .background-inherit {
   background-color: inherit !important;
+  .click-guidance {
+    background-color: rgba(38, 171, 207, 0.274);
+  }
 }
 .cart-table {
   background-color: inherit !important;

@@ -655,9 +655,9 @@ SANY-ON / 地霊達の帰宅`,
     "description": "",
     "circleImage": "/img/circle/spaceinaba.jpg",
     "productImages": [
-      "/img/circle/spaceinaba/goodsImg1Sc.jpg",
-      "/img/circle/spaceinaba/goodsImg2Sc.jpg",
-      "/img/circle/spaceinaba/goodsImg3Sc.jpg",
+      "/img/circle/spaceinaba/goodsImg1Si.jpg",
+      "/img/circle/spaceinaba/goodsImg2Si.jpg",
+      "/img/circle/spaceinaba/goodsImg3Si.png",
     ],
     "products": [
       {
