@@ -85,6 +85,8 @@ export default {
       console.log('function called', this.getOrderExist)
       return this.getOrderExist
     },
+  },
+  methods: {
     getReadableData () {
       const cart = this.$store.state.cart
       let totalPrice = 0
@@ -107,11 +109,10 @@ export default {
       }).join('\n')
       return formdata
     },
-  },
-  methods: {
     clickBtn () {
-      this.readableData = this.getReadableData
-      this.formData = this.getFormData
+      console.log('load form', this.$store.state.cart)
+      this.readableData = this.getReadableData()
+      this.formData = this.getFormData()
     },
     copyData () {
       const testingCodeToCopy = document.querySelector('#copy-area')
