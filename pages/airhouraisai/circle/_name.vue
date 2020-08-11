@@ -38,6 +38,9 @@
         >
           상품 정보
         </v-card-title>
+        <v-card-subtitle>
+          주의! 표시되는 재고는 현재 남은 재고가 아니라 전체 재고 수량입니다.
+        </v-card-subtitle>
         <div v-for="(item, i) in getInfoProducts" :key="i">
           <v-divider />
           <div class="d-flex flex-no-wrap mb-1">
@@ -56,7 +59,7 @@
                 :class="!isDesktop ? 'px-1' : ''"
                 v-text="item.productName"
               />
-              <v-card-subtitle :class="!isDesktop ? 'px-1 pb-2' : 'pb-2'" v-text="item.price + ' 원'" />
+              <v-card-subtitle :class="!isDesktop ? 'px-1 pb-2' : 'pb-2'" v-text="item.price + ' 원' + (item.remains ? ` (재고 수량 : ${item.remains})` : '')" />
               <v-card-subtitle :class="!isDesktop ? 'px-1' : ''" v-html="item.description" />
             </div>
           </div>
@@ -130,6 +133,16 @@
               />
             </div>
           </template>
+          <template v-slot:[`item.options`]="{ item }">
+            <div class="quantity-option-wrapper">
+              <v-text-field
+                v-model="item.options"
+                dense
+                single-line
+                class="quantity-input"
+              />
+            </div>
+          </template>
         </v-data-table>
         <v-divider />
         <v-btn class="mt-3" @click="saveOrder()">
@@ -183,6 +196,12 @@ export default {
         {
           text: '수량',
           value: 'quantity',
+          width: 200,
+          sortable: false,
+        },
+        {
+          text: '옵션',
+          value: 'options',
           width: 200,
           sortable: false,
         },

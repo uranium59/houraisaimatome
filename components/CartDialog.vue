@@ -101,7 +101,7 @@ export default {
       const cart = this.$store.state.cart
       const formdata = Object.keys(cart).map(e => {
         const items = cart[e].map(p => {
-          return `${e},${p.id},${p.quantity},${p.price},${p.quantity * p.price}`
+          return `${e},${p.id},${p.quantity},${p.price},${p.quantity * p.price},${p.options ? p.options.replace(/,/, '/') : ''}`
         }).join('\n')
         return items
       }).join('\n')

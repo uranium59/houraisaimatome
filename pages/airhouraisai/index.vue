@@ -19,7 +19,7 @@
     <CircleListItem v-for="(item, i) in circleList" :key="i" :circle-info="item" />
     <v-dialog
       v-model="showDialog"
-      :width="!isDesktop ? 330 : 900"
+      :width="!isDesktop ? 360 : 900"
     >
       <v-card class="howto-card">
         <v-card-title>
@@ -29,16 +29,23 @@
           1. 주문할 상품들을 둘러보기
         </v-card-subtitle>
         <v-card-text>
-          이미지 <br>
-          먼저, 관심있던 서클을 클릭해서 서클에서 판매하는 굿즈들의 정보를 확인합니다
+          <v-img max-height="400" contain src="/img/howto/1-3.png" />
+          <br>
+          먼저, 리스트를 둘러보며 관심있던 서클을 클릭해서 서클에서 판매하는 굿즈들의 정보를 확인합니다
         </v-card-text>
         <v-card-subtitle>
           2. 구입할 상품을 저장하기
         </v-card-subtitle>
         <v-card-text>
-          이미지 <br>
+          <v-img contain src="/img/howto/2.png" />
+          <br>
           사고싶은 물건을 정하셨다면 페이지 하단에서 각 상품별 수량을 입력하고 저장을 누릅니다.<br>
-          저장했던 내용을 삭제하고 싶을 경우 우측의 모두 지우기 버튼을 누르면 됩니다.
+          상품에 세부 항목이 존재할 경우 우측의 옵션에 세부 항목들을 적습니다.<br>
+          저장했던 내용을 삭제하고 싶을 경우 우측의 모두 지우기 버튼을 누르면 됩니다.<br>
+          <v-img max-height="236" contain src="/img/howto/3.png" />
+          <br>
+          장바구니에 성공적으로 저장되었다면 우측 하단에 장바구니 버튼이 생깁니다.<br>
+          <span class="important">※ 주의사항 ※ 각 상품에 적힌 재고는 실시간 재고가 아닌 전체 재고 입니다</span>
         </v-card-text>
         <v-card-subtitle>
           3. 구글 폼 데이터 작성하기
@@ -51,7 +58,8 @@
           4. 저장된 상품 정보 붙여넣기
         </v-card-subtitle>
         <v-card-text>
-          이미지 <br>
+          <v-img max-height="534" contain src="/img/howto/5.png" />
+          <br>
           구글 폼에 있는 구입할 상품 목록 항목에 장바구니의 데이터 복사하기 버튼을 눌러 저장된 정보를 입력합니다.<br>
           항목에는 내용을 직접 입력하실수도 있지만 구입하는 물건이 많을경우 입력하신 정보를 목록으로 다시 만드는 과정에서 실수할 가능성이 있으니 가급적 홈페이지에서 복사한 정보만 붙여넣어주세요
         </v-card-text>
@@ -142,5 +150,9 @@ export default {
 .howto-card {
   max-width: 900px !important;
   min-width: 300px !important;
+  .important {
+    font-weight: bold;
+    color: white;
+  }
 }
 </style>
