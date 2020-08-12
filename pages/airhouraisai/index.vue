@@ -74,9 +74,9 @@
           <br>
           모든 항목을 작성 완료하셨다면 끝!<br>
           구글폼에 나와있는 계좌에 입금을 하시고 상품의 배송을 편하게 기다려 주시면 됩니다!<br>
-          <v-divider />
+          <v-divider class="my-1" />
           <span class="important">※ 주의사항 ※ 재고가 부족한 물건은 신청 순서에 따라 주문이 취소 될 수 있습니다. 이점 양해 부탁드립니다.</span>
-          <v-divider />
+          <v-divider class="my-1" />
         </v-card-text>
         <v-card-subtitle>
           ※ 이 페이지는 서클리스트 상단의 "에어봉래제 통판 신청방법 자세히 보기" 를 눌러 다시 볼 수 있습니다<br>
