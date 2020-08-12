@@ -196,7 +196,7 @@ export default {
         {
           text: '수량',
           value: 'quantity',
-          width: 200,
+          width: 100,
           sortable: false,
         },
         {
@@ -294,6 +294,11 @@ export default {
   text-decoration: none;
   &:hover {
     outline-width: 1px;
+  }
+}
+.cart-table {
+  .text-start {
+    min-width: 100px !important;
   }
 }
 </style>

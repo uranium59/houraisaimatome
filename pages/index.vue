@@ -22,7 +22,7 @@
       class="card-background index-card my-5"
       hover
       elevation="4"
-      href="https://google.com"
+      href="https://forms.gle/nL6giLH8eAvz8nD28"
       target="_blank"
     >
       <v-card-title>

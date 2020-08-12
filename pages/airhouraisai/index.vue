@@ -51,14 +51,17 @@
           3. 구글 폼 데이터 작성하기
         </v-card-subtitle>
         <v-card-text>
-          이미지 <br>
-          원하는 모든 물건을 장바구니에 담았다면 구글 폼에서 배송받을 주소 / 이름 / 연락처 등의 정보를 입력합니다
+          <v-img max-height="271" contain src="/img/howto/4.png" />
+          <br>
+          원하는 모든 물건을 장바구니에 담았다면 홈페이지에 있는 구글 폼 바로가기 버튼을 눌러 구글 폼에서 배송받을 주소 / 이름 / 연락처 등의 정보를 입력합니다
         </v-card-text>
         <v-card-subtitle>
           4. 저장된 상품 정보 붙여넣기
         </v-card-subtitle>
         <v-card-text>
-          <v-img max-height="534" contain src="/img/howto/5.png" />
+          <v-img max-height="400" contain src="/img/howto/5.png" />
+          <br>
+          <v-img max-height="400" contain src="/img/howto/5-1.png" />
           <br>
           구글 폼에 있는 구입할 상품 목록 항목에 장바구니의 데이터 복사하기 버튼을 눌러 저장된 정보를 입력합니다.<br>
           항목에는 내용을 직접 입력하실수도 있지만 구입하는 물건이 많을경우 입력하신 정보를 목록으로 다시 만드는 과정에서 실수할 가능성이 있으니 가급적 홈페이지에서 복사한 정보만 붙여넣어주세요
@@ -67,10 +70,13 @@
           5. 전송하기
         </v-card-subtitle>
         <v-card-text>
-          이미지 <br>
+          <v-img max-height="330" contain src="/img/howto/6.png" />
+          <br>
           모든 항목을 작성 완료하셨다면 끝!<br>
           구글폼에 나와있는 계좌에 입금을 하시고 상품의 배송을 편하게 기다려 주시면 됩니다!<br>
+          <v-divider />
           <span class="important">※ 주의사항 ※ 재고가 부족한 물건은 신청 순서에 따라 주문이 취소 될 수 있습니다. 이점 양해 부탁드립니다.</span>
+          <v-divider />
         </v-card-text>
         <v-card-subtitle>
           ※ 이 페이지는 서클리스트 상단의 "에어봉래제 통판 신청방법 자세히 보기" 를 눌러 다시 볼 수 있습니다<br>

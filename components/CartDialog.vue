@@ -97,7 +97,7 @@ export default {
         }).join('\n')
         return `${e}\n${items}`
       }).join('\n')
-      return readable + `\n전체 ${totalPrice} 원`
+      return readable + `\n배송비 포함 전체 ${totalPrice + 4500} 원`
     },
     getFormData () {
       const cart = this.$store.state.cart
@@ -130,7 +130,7 @@ export default {
       })
     },
     gotoGoogleForm () {
-
+      window.open('https://forms.gle/nL6giLH8eAvz8nD28', '_blank')
     },
   }
 }
