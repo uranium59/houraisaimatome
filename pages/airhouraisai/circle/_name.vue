@@ -32,7 +32,7 @@
       </div>
       <v-divider />
 
-      <div class="product-info" :class="!isDesktop ? 'ml-3 mr-0' : 'ml-5 mr-2'">
+      <div class="product-info" :class="!isDesktop ? 'ml-2 mr-2' : 'ml-5 mr-2'">
         <v-card-title
           class="headline"
         >
@@ -103,7 +103,7 @@
         </v-expansion-panels>
         <v-divider />
       </div>
-      <div class="product-info" :class="!isDesktop ? 'ml-3 mr-0' : 'ml-5 mr-2'">
+      <div class="product-info" :class="!isDesktop ? 'ml-2 mr-2' : 'ml-5 mr-2'">
         <v-card-title
           class="headline mt-3"
         >
