@@ -116,6 +116,7 @@
           :headers="headers"
           :items="products"
           item-key="id"
+          items-per-page="50"
         >
           <template v-slot:[`item.price`]="{ item }">
             {{ item.price + '원' }}

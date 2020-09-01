@@ -9,12 +9,12 @@ module.exports = {
   */
 
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: '봉래제 어레인지 마토메',
+    titleTemplate: '',
+    title: '에어 봉래제',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: '에어 봉래제 부스 페이지 입니다' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

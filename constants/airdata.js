@@ -63,7 +63,7 @@ const data = [
       {
         "productId": "002",
         "productName": "Resolution",
-        "price": 6000,
+        "price": 5000,
         "remains": "50장",
         "coverImage": "/img/circle/teamng/2nd.jpg",
         "externalUrl": "https://soundcloud.com/uranium59/2nd-album-resolution-crossfade",
@@ -107,7 +107,7 @@ const data = [
       {
         "productId": "003",
         "productName": "Short Trip",
-        "price": 6000,
+        "price": 5000,
         "remains": "50장",
         "coverImage": "/img/circle/teamng/1st.png",
         "externalUrl": "https://soundcloud.com/uranium59/1st-album-short-trip-crossfade",
@@ -150,13 +150,6 @@ const data = [
           10. 미련(regretful)
           東方萃夢想 - 夜が降りてくる ~ Evening Star`,
         }]
-      },
-      {
-        "productId": "101",
-        "productName": "1집 + 2집",
-        "price": 10000,
-        "description": "1집과 2집을 동시 구매시 만원으로 구매 가능합니다",
-        "isPackage": true,
       }
     ]
   },
@@ -357,19 +350,101 @@ const data = [
         "productId": "001",
         "productName": "Stay the moon, Stay the star. (달에 머물고, 별에 머물다.)",
         "price": 10000,
-        "remains": "20장",
+        "remains": "17장",
         "coverImage": "/img/circle/campfire/album1Cf.jpg",
-        "externalUrl": "",
+        "externalUrl": "https://soundcloud.com/1234596/xfd",
         "description": "피아노가 너무 좋은 나머지 음악을 만들었습니다.",
+        "detailInfo": [{
+          "head": "앨범 수록곡",
+          "body": `
+          1. 밤의 개막식.
+          동방홍마향 ~ the Embodiment of Scarlet Devil
+          죽은 왕녀를 위한 세프텟트
+          
+          2. 다우저는 별을 가리킨다.
+          동방성련선 ~ Undefined Fantastic Object
+          봄의 항구에
+          
+          3. 한밤중의 물장난.
+          동방풍신록 ~ Mountain of Faith
+          네이티브 페이스
+          
+          4. 별똥별.
+          동방풍신록 ~ Mountain of Faith
+          아쿠타카와 류노스케의 캇파 ~ Candid Friend
+          
+          5. 적막한 밤 풍경.
+          동방문화첩 ~ Shoot the Bullet
+          레트러스펙티브 쿄토
+          
+          6. 별은 함께 춤을 춘다.
+          동방풍신록 ~ Mountain of Faith
+          액신이 가는 길 ~ Dark Road
+          
+          7. 별과 달이 함께하는 곳
+          동방홍마향 ~ the Embodiment of Scarlet Devil
+          붉은 누각 ~ Eastern Dream
+          
+          8. 새벽은 곧 저물고
+          동방지령전 ~ Subterranean Animism
+          하르트만의 요괴소녀
+          `
+        }],
       },
       {
         "productId": "002",
         "productName": "환상대모험",
         "price": 10000,
-        "remains": "39장",
+        "remains": "38장",
         "coverImage": "/img/circle/campfire/album2Cf.jpg",
         "externalUrl": "https://soundcloud.com/user-179665259/xfd/s-nnNSoHZLJHl",
         "description": "피아노가 너무 좋은 나머지 음악을 만들었습니다.",
+        "detailInfo": [{
+          "head": "앨범 수록곡",
+          "body": `
+          ~ A.M ~
+          
+          1. 8:00 a.m ~ 비몽사몽 나즈린
+          동방성련선 ~ Undefined Fantastic Object
+          - 봄의 항구에  (春の湊に)
+          
+          2. 10:00 a.m ~ 아침의 명련사
+          동방성련선 ~ Undefined Fantastic Object    
+          - 법계의 불  (法界の火)
+          
+          3. 11:00 a.m ~ 호랑이가 보탑을 먹었다
+          동방성련선 ~ Undefined Fantastic Object
+          - 호랑이 무늬의 비사문천 (虎柄の
+
+          ~ P.M ~
+          
+          4. 1:00 p.m ~ 고양이 축제
+          동방요요몽 ~ Perfect Cherry Blossom
+          - 원야환상이야기 (遠野幻想物語)
+          
+          5. 4:00 p.m ~ 깍둑썰기
+          동방요요몽 ~ Perfect Cherry Blossom  
+          - 히로아리, 괴조를 쏘다 ~ Till When? (広有射怪鳥事 〜 Till When ?)
+          
+          6. 7:59 p.m ~ 음주 항해
+          동방성련선 ~ Undefined Fantastic Object
+          - 캡틴 무라사 (キャプテン ・ムラサ)
+          
+          7. 11:30 p.m ~ 내 장어구이를 먹어
+          동방영야초 〜 Imperishable Nigh
+          - 이젠 노래밖에 들리지 않아 (もう歌しか聞こえない) 
+          
+          ~ Over Time ~
+          
+          2:00 a.m ~ 낭만적인 불지옥
+          동방영야초 〜 Imperishable Nigh
+          - 달까지 닿아라, 불사의 연기 (月まで届け、不死の煙)
+          
+          4:00 a.m ~ 나즈린의 새벽까지 다우저
+          동방성련선 ~ Undefined Fantastic Object
+          - 봄의 항구에  (春の湊に)
+          `
+        }],
       },
       {
         "productId": "101",
@@ -500,7 +575,7 @@ wav 파일 보내드리겠습니다!
         "remains": "19권",
         "coverImage": "/img/circle/library/bookLi.jpg",
         "externalUrl": "",
-        "description": "바깥세계의 동방프로젝트와 관련된 행사 등을 경험한 이야기들을 소악마라는 캐릭터를 빌려 에세이로 풀어낸 서적입니다. “박려신사, 칵테일, 방탄제, 오동도, AGF” 총 5가지 내용이 나오며 여러 사진도 수록되어 있습니다.",
+        "description": "바깥세계의 동방프로젝트와 관련된 행사 등을 경험한 이야기들을 소악마라는 캐릭터를 빌려 에세이로 풀어낸 36페이지, A5 사이즈의 서적입니다.  “박려신사, 칵테일, 방탄제, 오동도, AGF” 총 5가지 내용이 나오며 여러 장의 사진도 수록되어 있습니다.",
       },
     ]
   },
@@ -801,7 +876,7 @@ SANY-ON / 地霊達の帰宅`,
     "circleId": "strawberrygarden",
     "circleName": "Strawberry Garden",
     "boothNumber": "C-09",
-    "homepage": "https://twitter.com/@amaberry15",
+    "homepage": "https://twitter.com/amaberry15",
     "description": "ama15입니다 홍마관 위주의 굿즈가 있으며 일러스트집 등 위탁물품도 있습니다 잘 부탁드립니다",
     "circleImage": "/img/circle/strawberrygarden.jpg",
     "productImages": [
@@ -854,6 +929,325 @@ SANY-ON / 地霊達の帰宅`,
       }
     ]
   },
+  {
+    "circleId": "kumono",
+    "circleName": "주망지재상단",
+    "boothNumber": "A-15",
+    "homepage": "https://twitter.com/kumono_ie",
+    "description": "취미로 동인을 하는 서클이다",
+    "circleImage": "/img/circle/kumono.png",
+    "productImages": [
+      "/img/circle/kumono/goodsimg1.jpg",
+      "/img/circle/kumono/goodsimg2.jpg",
+      "/img/circle/kumono/goodsimg3.jpg",
+      "/img/circle/kumono/goodsimg4.jpg",
+      "/img/circle/kumono/goodsimg5.jpg",
+      "/img/circle/kumono/goodsimg6.jpg",
+      "/img/circle/kumono/goodsimg7.jpg",
+      "/img/circle/kumono/goodsimg8.jpg",
+      "/img/circle/kumono/goodsimg9.jpg",
+      "/img/circle/kumono/goodsimg10.jpg",
+      "/img/circle/kumono/goodsimg11.jpg",
+    ],
+    "products": [
+      {
+        "productId": "001",
+        "productName": "동방질죄종 티셔츠-음욕",
+        "price": 25000,
+        "coverImage": "/img/circle/kumono/t1.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 티셔츠",
+      },
+     {
+        "productId": "002",
+        "productName": "동방칠죄종 티셔츠-교만",
+        "price": 25000,
+        "coverImage": "/img/circle/kumono/t2.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 티셔츠",
+      },
+     {
+        "productId": "003",
+        "productName": "동방칠죄종 티셔츠-식탐",
+        "price": 25000,
+        "coverImage": "/img/circle/kumono/t3.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 티셔츠",
+      },
+     {
+        "productId": "004",
+        "productName": "동방칠죄종 티셔츠-나태",
+        "price": 25000,
+        "coverImage": "/img/circle/kumono/t4.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 티셔츠",
+      },
+     {
+        "productId": "005",
+        "productName": "동방칠죄종 티셔츠-분노",
+        "price": 25000,
+        "coverImage": "/img/circle/kumono/t5.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 티셔츠",
+      },
+     {
+        "productId": "006",
+        "productName": "동방칠죄종 티셔츠-시기",
+        "price": 25000,
+        "coverImage": "/img/circle/kumono/t6.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 티셔츠",
+      },
+     {
+        "productId": "007",
+        "productName": "동방칠죄종 티셔츠-인색",
+        "price": 25000,
+        "coverImage": "/img/circle/kumono/t7.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 티셔츠",
+      },
+      {
+        "productId": "008",
+        "productName": "동방칠죄종 스티커-음욕",
+        "price": 3000,
+        "coverImage": "/img/circle/kumono/ts1.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 스티커",
+      },
+     {
+        "productId": "009",
+        "productName": "동방칠죄종 스티커-교만",
+        "price": 3000,
+        "coverImage": "/img/circle/kumono/ts2.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 스티커",
+      },
+     {
+        "productId": "010",
+        "productName": "동방칠죄종 스티커-식탐",
+        "price": 3000,
+        "coverImage": "/img/circle/kumono/ts3.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 스티커",
+      },
+     {
+        "productId": "011",
+        "productName": "동방칠죄종 스티커-나태",
+        "price": 3000,
+        "coverImage": "/img/circle/kumono/ts4.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 스티커",
+      },
+     {
+        "productId": "012",
+        "productName": "동방칠죄종 스티커-분노",
+        "price": 3000,
+        "coverImage": "/img/circle/kumono/ts5.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 스티커",
+      },
+     {
+        "productId": "013",
+        "productName": "동방칠죄종 스티커-시기",
+        "price": 3000,
+        "coverImage": "/img/circle/kumono/ts6.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 스티커",
+      },
+     {
+        "productId": "014",
+        "productName": "동방칠죄종 스티커-인색",
+        "price": 3000,
+        "coverImage": "/img/circle/kumono/ts7.jpg",
+        "externalUrl": "",
+        "description": "동방 칠죄종 컨셉의 스티커",
+      },
+     {
+        "productId": "015",
+        "productName": "순호 마우스패드",
+        "price": 7000,
+        "coverImage": "/img/circle/kumono/mouse_ws.jpg",
+        "externalUrl": "",
+        "description": "순호 마우스패드",
+      },
+     {
+        "productId": "016",
+        "productName": "순호 스티커",
+        "price": 3000,
+        "coverImage": "/img/circle/kumono/sticker.jpg",
+        "externalUrl": "",
+        "description": "순호 스티커",
+      },
+     {
+        "productId": "017",
+        "productName": "너와의 기념일",
+        "price": 8500,
+        "coverImage": "/img/circle/kumono/book1.jpg",
+        "externalUrl": "",
+        "description": "Kirero작가의 레미사쿠 동인지",
+      },
+     {
+        "productId": "018",
+        "productName": "우주의 죽음을 본 불로불사",
+        "price": 8500,
+        "coverImage": "/img/circle/kumono/book2.jpg",
+        "externalUrl": "",
+        "description": "ALISON작가의 영원정 동인지",
+      },
+     {
+        "productId": "017",
+        "productName": "알마의 역린",
+        "price": 8500,
+        "coverImage": "/img/circle/kumono/book3.jpg",
+        "externalUrl": "",
+        "description": "kataK작가의 사키야치동인지",
+      },
+     {
+        "productId": "019",
+        "productName": "만추의 저녁",
+        "price": 5000,
+        "coverImage": "/img/circle/kumono/book4.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "020",
+        "productName": "섬광의 저녁, 무지개의 전사",
+        "price": 5000,
+        "coverImage": "/img/circle/kumono/book5.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "021",
+        "productName": "새련",
+        "price": 5000,
+        "coverImage": "/img/circle/kumono/book6.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "022",
+        "productName": "동인이벤트 분석담당자 핸드북",
+        "price": 10000,
+        "coverImage": "/img/circle/kumono/book7.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "023",
+        "productName": "텍스트 동인경제학 이론",
+        "price": 10000,
+        "coverImage": "/img/circle/kumono/book8.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "024",
+        "productName": "동방박사1",
+        "price": 8000,
+        "coverImage": "/img/circle/kumono/book9.jpg",
+        "externalUrl": "",
+        "description": "동인설덕들의 사설집",
+      },
+     {
+        "productId": "025",
+        "productName": "동방박사2",
+        "price": 8000,
+        "coverImage": "/img/circle/kumono/book10.jpg",
+        "externalUrl": "",
+        "description": "동인설덕들의 사설집",
+      },
+     {
+        "productId": "026",
+        "productName": "동방박사3",
+        "price": 8000,
+        "coverImage": "/img/circle/kumono/book11.jpg",
+        "externalUrl": "",
+        "description": "동인설덕들의 사설집",
+      },
+     {
+        "productId": "027",
+        "productName": "재봉난투",
+        "price": 5000,
+        "coverImage": "/img/circle/kumono/book12.jpg",
+        "externalUrl": "",
+        "description": "앨리스와 린노스케의 난투, 그리고 마리사의 이야기",
+      },
+     {
+        "productId": "028",
+        "productName": "비봉구락부의 세계에 대한 보고서",
+        "price": 7000,
+        "coverImage": "/img/circle/kumono/book13.jpg",
+        "externalUrl": "",
+        "description": "비봉구락부 세계관에 대한 과학적 해석",
+      },
+     {
+        "productId": "029",
+        "productName": "sedo 동방 피아노 베스트",
+        "price": 10000,
+        "coverImage": "/img/circle/kumono/album.jpg",
+        "externalUrl": "",
+        "description": "sedrife의 동방 피아노 베스트",
+      },
+     {
+        "productId": "029",
+        "productName": "유폐 앨범",
+        "price": 7000,
+        "coverImage": "/img/circle/kumono/yh1.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "030",
+        "productName": "유폐 앨범",
+        "price": 13000,
+        "coverImage": "/img/circle/kumono/yh2.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "031",
+        "productName": "유폐 앨범",
+        "price": 13000,
+        "coverImage": "/img/circle/kumono/yh3.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "032",
+        "productName": "유폐 앨범",
+        "price": 13000,
+        "coverImage": "/img/circle/kumono/yh4.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "033",
+        "productName": "유폐 앨범",
+        "price": 13000,
+        "coverImage": "/img/circle/kumono/yh5.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "034",
+        "productName": "유폐 앨범",
+        "price": 25000,
+        "coverImage": "/img/circle/kumono/yh6.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+     {
+        "productId": "035",
+        "productName": "예대제 카탈로그",
+        "price": 18000,
+        "coverImage": "/img/circle/kumono/retaisai.jpg",
+        "externalUrl": "",
+        "description": "",
+      },
+    ]
+  }
 ]
 
 export default data

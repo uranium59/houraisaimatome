@@ -32,10 +32,25 @@
         에어 봉래제 주문 구글폼 바로가기
       </v-card-title>
     </v-card>
+    <v-card
+      class="card-background index-card my-5"
+      hover
+      elevation="4"
+      href="http://houraisai.com"
+      target="_blank"
+    >
+      <v-card-title>
+        <v-icon class="menu-icon pr-3 pt-0">
+          mdi-arrow-right
+        </v-icon>
+        봉래제 공식 홈페이지
+      </v-card-title>
+    </v-card>
     <v-card 
       class="card-background index-card my-5"
       elevation="4"
-      to="/arrangelist"
+      href="https://houraisaimatome.com"
+      target="_blank"
     >
       <v-card-title>
         <v-icon class="menu-icon pr-3 pt-0">
@@ -43,21 +58,6 @@
         </v-icon>
         봉래제 어레인지 서클 리스트
       </v-card-title>
-    </v-card>
-    <v-card
-      class="card-background index-card my-5"
-      elevation="4"
-      disabled
-    >
-      <v-card-title>
-        <v-icon class="menu-icon pr-3 pt-0">
-          mdi-arrow-right
-        </v-icon>
-        봉래제 마토메
-      </v-card-title>
-      <v-card-subtitle>
-        준비중
-      </v-card-subtitle>
     </v-card>
   </div>
 </template>
