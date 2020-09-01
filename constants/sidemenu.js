@@ -16,7 +16,7 @@ export default [
     target: '_blank',
   },
   {
-    icon: 'mdi-page-next-outline',
+    icon: 'mdi-open-in-new',
     title: '어레인지 서클 리스트',
     to: 'https://houraisaimatome.com',
   },
