@@ -18,7 +18,8 @@ export default [
   {
     icon: 'mdi-open-in-new',
     title: '어레인지 서클 리스트',
-    to: 'https://houraisaimatome.com',
+    href: 'https://houraisaimatome.com',
+    target: '_blank',
   },
   {
     icon: 'mdi-chart-bubble',
