@@ -67,7 +67,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: '봉래제 마토메 사이트'
+      title: '에어 봉래제'
     }
   },
   computed: {
