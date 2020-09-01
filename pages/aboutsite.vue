@@ -14,7 +14,7 @@
         사이트 오류와 관련된 사항은 <a href="https://github.com/uranium59/houraisaimatome" target="_blank">https://github.com/uranium59/houraisaimatome</a> 에 이슈로 등록하여 주시거나 gdzergling@core-a.org 로 메일 부탁드립니다.
       </v-card-text>
     </v-card>
-    <v-card class="aboutus-card">
+    <!-- <v-card class="aboutus-card">
       <v-card-title>
         봉래제 어레인지 서클 리스트
       </v-card-title>
@@ -44,7 +44,7 @@
       <v-card-text>
         봉래제 어레인지 마토메 페이지는 추후 봉래제 전체 서클의 마토메 사이트로 변환될 예정입니다<br>
       </v-card-text>
-    </v-card>
+    </v-card> -->
   </div>
 </template>
 <script>

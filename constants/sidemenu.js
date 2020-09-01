@@ -6,19 +6,19 @@ export default [
   },
   {
     icon: 'mdi-page-next-outline',
-    title: '에어봉래제',
+    title: '에어봉래제 서클 리스트',
     to: '/airhouraisai',
-  },
-  {
-    icon: 'mdi-page-next-outline',
-    title: '어레인지 서클 리스트',
-    to: '/arrangelist',
   },
   {
     icon: 'mdi-open-in-new',
     title: '봉래제 공식 홈페이지',
     href: 'http://houraisai.com',
     target: '_blank',
+  },
+  {
+    icon: 'mdi-page-next-outline',
+    title: '어레인지 서클 리스트',
+    to: 'https://houraisaimatome.com',
   },
   {
     icon: 'mdi-chart-bubble',
