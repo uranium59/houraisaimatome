@@ -739,10 +739,10 @@ SANY-ON / 地霊達の帰宅`,
   },
   {
     "circleId": "spaceinaba",
-    "circleName": "spaceinaba",
+    "circleName": "SPACE INABA",
     "boothNumber": "A-09",
     "homepage": "https://twitter.com/terujoa178",
-    "description": "",
+    "description": "영야초 보스 일러스트집 사주세요! 아주 이쁩니다.. 이럴수가!!",
     "circleImage": "/img/circle/spaceinaba.jpg",
     "productImages": [
       "/img/circle/spaceinaba/productimg1.jpg",
