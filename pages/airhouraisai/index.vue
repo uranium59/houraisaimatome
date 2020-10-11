@@ -4,20 +4,20 @@
     <v-card class="card-background pa-1 mt-2 mb-4">
       <v-card-subtitle class="pa-1 top-announce">
         <b>봉래제 ~air~ 는 봉래제에 부스들의 작품들을 정리한 통신판매 서비스입니다.</b><br><br>
-        구매자 여러분들의 배송비 절감을 위해 통판 종료 직후 참가서클의 작품을 수량대로 봉래제 주최진이 먼저 모은후 구매자 분들에게 배송드리는 방법으로 진행하고 있사오니 작품을 받아보시는데 다소의 시간이 걸리는 점 양해 부탁드립니다.
+        통판 행사가 종료 무사히 종료되었습니다. 참가해주신 모든 분들께 감사드립니다.
       </v-card-subtitle>
     </v-card>
     <div class="top-text">
       정렬은 서클넘버를 기준으로 합니다.
     </div>
-    <div class="show-howto" @click="showHowTo()">
+    <!-- <div class="show-howto" @click="showHowTo()">
       <v-icon class="howto-icon">
         mdi-chevron-double-right
       </v-icon>
       에어봉래제 통판 신청방법 자세히 보기
-    </div>
+    </div> -->
     <CircleListItem v-for="(item, i) in circleList" :key="i" :circle-info="item" />
-    <v-dialog
+    <!-- <v-dialog
       v-model="showDialog"
       :width="!isDesktop ? 360 : 900"
     >
@@ -85,7 +85,7 @@
           </v-btn>
         </v-card-subtitle>
       </v-card>
-    </v-dialog>
+    </v-dialog> -->
   </div>
 </template>
 

@@ -11,14 +11,14 @@
         <v-icon class="menu-icon pr-3 pt-0">
           mdi-arrow-right
         </v-icon>
-        에어 봉래제 참여 페이지
+        에어 봉래제 서클 리스트 페이지
       </v-card-title>
       <v-card-text>
         주문 마감 기한 : 2020/09/30<br>
         입금 마감 기한 : 2020/09/30
       </v-card-text>
     </v-card>
-    <v-card
+    <!-- <v-card
       class="card-background index-card my-5"
       hover
       elevation="4"
@@ -31,7 +31,7 @@
         </v-icon>
         에어 봉래제 주문 구글폼 바로가기
       </v-card-title>
-    </v-card>
+    </v-card> -->
     <v-card
       class="card-background index-card my-5"
       hover

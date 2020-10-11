@@ -32,7 +32,7 @@
       </div>
       <v-divider />
 
-      <div class="product-info" :class="!isDesktop ? 'ml-2 mr-2' : 'ml-5 mr-2'">
+      <div class="product-info" :class="!isDesktop ? 'ml-2 mr-2 pb-3' : 'ml-5 mr-2 pb-3'">
         <v-card-title
           class="headline"
         >
@@ -103,7 +103,7 @@
         </v-expansion-panels>
         <v-divider />
       </div>
-      <div class="product-info" :class="!isDesktop ? 'ml-2 mr-2' : 'ml-5 mr-2'">
+      <!-- <div class="product-info" :class="!isDesktop ? 'ml-2 mr-2' : 'ml-5 mr-2'">
         <v-card-title
           class="headline mt-3"
         >
@@ -155,7 +155,7 @@
         <v-card-subtitle>
           주의! 입력한 찜 목록은 사이트를 벗어나면 초기화 됩니다!
         </v-card-subtitle>
-      </div>
+      </div> -->
     </v-card>
     <v-dialog>
       <v-card>
